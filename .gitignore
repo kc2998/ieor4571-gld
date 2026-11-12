@@ -1,0 +1,42 @@
+# Environments and tool caches
+.venv
+.venv.nosync/
+__pycache__/
+*.py[oc]
+.ruff_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+.virtual_documents/
+.DS_Store
+build/
+dist/
+*.egg-info/
+
+# Quarto renders
+.quarto/
+**/*.quarto_ipynb
+*_files/
+*.html
+
+# Personal scratch, papers and notes
+local/
+
+# Data is rebuilt from 01_data/, never committed
+01_data/raw/*
+01_data/processed/*
+!01_data/**/.gitkeep
+
+# Experiment outputs: regenerate them, never commit them
+results/*
+!results/.gitkeep
+
+# Data file types are blocked anywhere in the repo
+*.parquet
+*.feather
+*.csv
+*.xlsx
+*.pkl
+*.pickle
+
+# Secrets (API keys for FRED, etc.)
+.env

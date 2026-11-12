@@ -1,0 +1,10 @@
+project:
+  execute-dir: project   # paths in .qmd files resolve from the repo root
+
+format:
+  html:
+    toc: true
+    code-fold: false
+    embed-resources: true
+
+jupyter: ieor4571-project
